@@ -84,6 +84,13 @@ Implemented:
 - Counter-based loop.
 - Updating loop control variables to avoid infinite loops.
 
+Activities performed:
+- Tested positive, negative, and zero values.
+- Verified loop execution for different ranges.
+- Checked edge cases for password length.
+- Observed output after using different loop control statements.
+- Compared expected and actual outputs.
+
 ---
 
 ### 9. Loop Control Statements
@@ -123,6 +130,23 @@ Developed programs for:
 - Worked with list traversal and string length calculation.
 - Used loop control statements (`break`, `continue`, and `pass`) in practical examples.
 - Developed small real-world programs such as password validation and age classification.
+- Positive and even number checker.
+- Divisibility checker (3 or 5).
+- Multiplication table of a fixed number.
+- Multiplication table using user input.
+- Password strength validator.
+- Password authentication with limited attempts.
+- Age category classifier.
+- List traversal and element display.
+- Counting numbers using `for` loop.
+- Reverse counting using custom step values.
+- Demonstration of `break` statement.
+- Demonstration of `continue` statement.
+- Demonstration of `pass` statement.
+- Searching an element using loop `else`.
+- Bitwise operation calculator.
+- Identity comparison of Python objects.
+- Membership checking in lists.
 
 ---
 
