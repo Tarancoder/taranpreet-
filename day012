@@ -1,0 +1,207 @@
+# Day 12 - Data Preprocessing Using Python
+
+## Objective
+
+To understand the concept of Data Preprocessing, learn different techniques for cleaning and transforming raw datasets, handle missing values and categorical data, and prepare datasets for Machine Learning algorithms.
+
+---
+
+# Introduction
+
+Today I learned **Data Preprocessing**, an important step in the Data Science and Machine Learning workflow. Raw datasets often contain missing values, duplicate records, inconsistent data, and different types of features that cannot be directly used for Machine Learning models.
+
+The session focused on different preprocessing techniques used to clean, transform, and prepare datasets for model training. I also learned how Python libraries such as Pandas, NumPy, and Scikit-learn help in performing data preprocessing efficiently.
+
+The Titanic dataset was used to understand and practice different preprocessing techniques.
+
+---
+
+# Topics Covered
+
+## 1. Introduction to Data Preprocessing
+
+Learned about data preprocessing and its importance in Machine Learning.
+
+Understood that preprocessing helps to:
+
+- Improve data quality.
+- Handle missing values.
+- Remove duplicate records.
+- Convert categorical data into numerical form.
+- Scale numerical features.
+- Prepare data for Machine Learning algorithms.
+
+## 2. Handling Missing Values
+
+Learned how to identify and handle missing values in a dataset.
+
+Used:
+
+```python
+df.isnull().sum()
+```
+
+Studied different techniques for handling missing data:
+
+- Removing rows containing missing values.
+- Removing columns with excessive missing values.
+- Replacing missing numerical values with the mean.
+- Replacing missing numerical values with the median.
+- Replacing missing categorical values with the mode.
+
+Understood that the choice of technique depends on the dataset and the amount of missing information.
+
+## 3. Handling Duplicate Values
+
+Learned how to identify and remove duplicate records from a dataset.
+
+Used:
+
+```python
+df.duplicated().sum()
+```
+
+To remove duplicate records:
+
+```python
+df.drop_duplicates(inplace=True)
+```
+
+Understood that duplicate data can affect the accuracy of analysis and model performance.
+
+## 4. Encoding Categorical Variables
+
+Learned that many Machine Learning algorithms require categorical data to be converted into numerical values.
+
+Studied the following encoding techniques:
+
+**Label Encoding:**
+
+Assigns numerical labels to different categories.
+
+Example:
+
+- Male → 1
+- Female → 0
+
+**One-Hot Encoding:**
+
+Creates separate binary columns for different categories.
+
+Example:
+
+- Red → [1, 0, 0]
+- Blue → [0, 1, 0]
+- Green → [0, 0, 1]
+
+Understood the importance of converting categorical features into a suitable numerical format.
+
+## 5. Feature Scaling
+
+Learned about feature scaling and why it is important when numerical features have different ranges.
+
+Studied two common techniques:
+
+**Standardization:**
+
+Transforms data so that it has approximately zero mean and unit standard deviation.
+
+**Normalization:**
+
+Scales values into a fixed range, commonly between 0 and 1.
+
+Learned about the following Scikit-learn functions:
+
+- `StandardScaler()`
+- `MinMaxScaler()`
+
+Understood that feature scaling is particularly useful for algorithms that are sensitive to differences in feature magnitudes.
+
+## 6. Handling Outliers
+
+Revised the concept of outliers and learned how they can affect Machine Learning models.
+
+Studied different approaches:
+
+- Identifying outliers using box plots.
+- Using the Interquartile Range (IQR) method.
+- Removing incorrect extreme values.
+- Capping extreme values when appropriate.
+
+Understood that outliers should be examined before deciding whether to remove or transform them.
+
+## 7. Feature Selection
+
+Learned about feature selection and its importance in Machine Learning.
+
+Understood that feature selection involves choosing the most relevant features from a dataset.
+
+Benefits include:
+
+- Reducing unnecessary features.
+- Simplifying the dataset.
+- Reducing model complexity.
+- Improving model efficiency.
+- Avoiding irrelevant information.
+
+## 8. Splitting the Dataset
+
+Learned how to divide a dataset into training and testing sets.
+
+Used the Scikit-learn function:
+
+```python
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+```
+
+Understood:
+
+- Training Data: Used to train the Machine Learning model.
+- Testing Data: Used to evaluate the model's performance on unseen data.
+
+Also understood the importance of separating the target variable from input features.
+
+---
+
+# Practical Work
+
+During today's practical session, I:
+
+- Loaded the Titanic dataset using Pandas.
+- Identified missing values in different columns.
+- Practiced handling missing numerical and categorical values.
+- Checked and removed duplicate records.
+- Explored categorical encoding techniques.
+- Practiced converting categorical features into numerical values.
+- Learned about normalization and standardization.
+- Applied feature scaling techniques.
+- Studied methods for identifying and handling outliers.
+- Understood the importance of feature selection.
+- Split the dataset into training and testing sets.
+- Explored how preprocessing prepares raw data for Machine Learning algorithms.
+
+---
+
+# Applications in Data Science and Machine Learning
+
+Data Preprocessing is commonly used for:
+
+- Cleaning raw datasets.
+- Handling missing and duplicate values.
+- Converting categorical variables into numerical values.
+- Scaling numerical features.
+- Handling outliers.
+- Selecting relevant features.
+- Preparing training and testing datasets.
+- Improving Machine Learning model performance.
+
+---
+
+# Outcome
+
+By the end of today's session, I understood the importance of Data Preprocessing in the Machine Learning workflow. I learned different techniques for handling missing values, removing duplicates, encoding categorical variables, scaling numerical features, and preparing datasets for model training.
+
