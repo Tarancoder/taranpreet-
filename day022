@@ -1,0 +1,76 @@
+# Day 22 – Model Evaluation and Hyperparameter Tuning
+
+## 1. Objective
+
+To understand how to evaluate Machine Learning models and learn techniques for improving their performance through hyperparameter tuning.
+
+## 2. Introduction
+
+Today I learned about model evaluation, which is an important step in Machine Learning. After training a model, it is necessary to check how accurately it makes predictions on unseen data.
+
+I also studied hyperparameter tuning, which helps improve model performance by selecting suitable settings for the learning algorithm.
+
+## 3. Topics Covered
+
+### 3.1 Model Evaluation
+
+Model evaluation is the process of measuring how well a Machine Learning model performs.
+
+The dataset is commonly divided into:
+- **Training Set:** Used to train the model.
+- **Testing Set:** Used to evaluate the model on unseen data.
+
+### 3.2 Confusion Matrix
+
+A confusion matrix is used to evaluate classification models by comparing actual and predicted values.
+
+It contains four main components:
+
+- **True Positive (TP):** Correctly predicted positive cases.
+- **True Negative (TN):** Correctly predicted negative cases.
+- **False Positive (FP):** Negative cases incorrectly predicted as positive.
+- **False Negative (FN):** Positive cases incorrectly predicted as negative.
+
+### 3.3 Classification Evaluation Metrics
+
+Some important evaluation metrics are:
+
+- **Accuracy:** Measures the overall percentage of correct predictions.
+- **Precision:** Measures how many predicted positive cases are actually positive.
+- **Recall:** Measures how many actual positive cases are correctly identified.
+- **F1-Score:** Represents the balance between precision and recall.
+
+### 3.4 Cross-Validation
+
+Cross-validation is a technique used to evaluate a model more reliably.
+
+In K-Fold Cross-Validation, the dataset is divided into K parts. The model is trained and evaluated multiple times, using a different part for validation in each round.
+
+### 3.5 Hyperparameter Tuning
+
+Hyperparameters are settings selected before the model training process. They control how a Machine Learning algorithm learns.
+
+Hyperparameter tuning helps find suitable values for these settings.
+
+Two common techniques are:
+
+1. **GridSearchCV:** Tests different combinations of hyperparameters to find the best combination.
+2. **RandomizedSearchCV:** Tests randomly selected combinations of hyperparameters, which can reduce search time.
+
+## 4. Practical Work
+
+- Studied how to evaluate classification models.
+- Understood the confusion matrix and evaluation metrics.
+- Learned the basic working of K-Fold Cross-Validation.
+- Explored GridSearchCV and RandomizedSearchCV for hyperparameter tuning.
+
+## 5. Applications in Data Science and Machine Learning
+
+- **Model Improvement:** Helps select better model settings.
+- **Healthcare:** Evaluates the reliability of disease prediction models.
+- **Fraud Detection:** Helps measure how effectively fraudulent transactions are identified.
+- **Model Selection:** Helps compare different Machine Learning algorithms.
+
+## 6. Outcome
+
+Today I learned how to evaluate Machine Learning models using different performance metrics. I understood the confusion matrix, precision, recall, F1-score, and cross-validation. I also learned how hyperparameter tuning techniques such as GridSearchCV and RandomizedSearchCV can help improve model performance.
